@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: rgb(155, 155, 155) 2px solid;
+  border-radius: 0.5rem;
+  width: 15vw;
+  padding: 10px;
+}
+
+.showDataIda {
+  background-color: aqua;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.showDataDD {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.txtDestino {
+  font-size: 1.2rem;
+}
+
+.txtDia {
+  font-size: 16px;
+}
+
+.showDataAD {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 3vw;
+}
+
+.line {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #000000;
+  margin: 0 8px;
+}
+
+.showDuracion {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txtDuration {
+  font-size: 0.8rem;
+}
+
+.txtTime {
+  font-size: 1rem;
+}
