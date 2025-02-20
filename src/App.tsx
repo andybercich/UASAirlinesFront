@@ -1,11 +1,14 @@
-function App() {
+import { ComponentVuelo } from "./components/UI/ComponentVuelo/ComponentVuelo";
+import styles from "./App.module.css";
+import { Header } from "./components/UI/Header/Header";
 
+function App() {
   return (
-    <>
-    <h2>BIENVENIDO</h2>
-       
-    </>
-  )
+    <div className={styles.containerMain}>
+      <Header />
+      <ComponentVuelo />
+    </div>
+  );
 }
 
-export default App
+export default App;
