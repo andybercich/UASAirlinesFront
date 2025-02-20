@@ -14,7 +14,7 @@ export const ShowVuelo = () => {
         <div className={styles.destino}>
           <h3>Destino</h3>
 
-          <p>Buenos, Argentina</p>
+          <p>Buenos Aires, Argentina</p>
         </div>
       </div>
       <div className={styles.showDays}>

@@ -13,7 +13,9 @@
     flex-direction: column;
     height: 6vh;
     width: 5vw;
-    margin-left: 5rem;
+    margin-left: 5rem; 
+    font-family: 'Abhaya Libre', serif;
+    font-size: 1.1rem;
 }
 
 .titulo h3{
@@ -52,4 +54,9 @@
 
 .componentsHeader ul li{
     color: #3C1642;
+}
+
+.componentsHeader ul li:hover{
+    color: #702a7a;
+    cursor: pointer;
 }
