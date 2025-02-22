@@ -4,12 +4,11 @@
   gap: 0.5rem;
   border: rgb(155, 155, 155) 2px solid;
   border-radius: 0.5rem;
-  width: 15vw;
-  padding: 10px;
+  width: 12vw;
+  padding: 8px;
 }
 
 .showDataIda {
-  background-color: aqua;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -18,9 +17,9 @@
 }
 
 .showDataDD {
-  background-color: aquamarine;
   display: flex;
   justify-content: center;
+  height: 7vh;
   width: 100%;
   flex-direction: column;
 }
@@ -31,27 +30,39 @@
 
 .txtDia {
   font-size: 16px;
+  margin-top: -9px;
 }
 
 .showDataAD {
-  background-color: aqua;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 7vh;
   width: 100%;
-  gap: 3vw;
+  gap: 2.5vw;
+}
+
+.lineContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.directo {
+  font-size: 0.8rem;
+  color: #3C1642;
+  margin-bottom: 2px;
 }
 
 .line {
-  display: inline-block;
   width: 50px;
   height: 2px;
-  background-color: #000000;
-  margin: 0 8px;
+  background-color: rgb(155, 155, 155);;
+  margin-bottom: 15px;
 }
 
 .showDuracion {
-  background-color: antiquewhite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,12 +73,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.3vw;
 }
 
 .txtDuration {
   font-size: 0.8rem;
+  color: #3C1642;
+  margin-bottom: -9px;
 }
 
 .txtTime {
-  font-size: 1rem;
+  font-size: 0.8rem;
+}
+
+.lineDiv{
+  width: 225px;
+  height: 2px;
+  background-color: rgb(155, 155, 155);
+}
+
+.showDataVuelta{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
