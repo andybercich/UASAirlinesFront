@@ -8,14 +8,17 @@ const HeroSection = () => {
   return (
     <>
       <div className="w-full h-full  ">
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+      <Swiper
+          modules={[Navigation, Pagination,Autoplay]}
           loop={true}
-          spaceBetween={0}
+          spaceBetween={0}  // Quita cualquier espacio entre slides
           slidesPerView={1}
           autoplay={{ delay: 5000 }}
           pagination={{ clickable: true }}
-          className=" shadow-lg"
+          navigation={false}  // No mostramos las flechas
+          allowTouchMove={true}  // Deshabilita el movimiento del mouse
+          simulateTouch={true}   // Deshabilita la simulación de deslizamiento táctil
+          className="shadow-lg cursor-pointer"
         >
           <SwiperSlide className="flex items-center justify-center h-full ">
             <div className="bg-[url('https://wallpapershome.com/images/pages/pic_h/572.jpg')] bg-cover bg-center w-full h-150"><div className="text-end p-20 ">
@@ -62,7 +65,7 @@ const HeroSection = () => {
             className="text-white text-7xl drop-shadow-2xl "
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
           >
-            Aprovecha las Ofertas
+            Aprovecha las ofertas
           </div>
         </div></div>
           </SwiperSlide>
@@ -71,6 +74,7 @@ const HeroSection = () => {
         
         </Swiper>
       </div>
+      
     </>
   );
 };
