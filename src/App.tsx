@@ -9,20 +9,23 @@ import {vueloService} from "./Services/vueloService";
 
 
 function App() {
-
   const service = new vueloService();;
 
   const [vuelos, setVuelos] = useState<IVueloDTO[]>([]);
   
   useEffect(() => {
-    service.getAllVuelosByOrigenAndDestino(1, 3)
-      .then((data:IVueloDTO[] | any) => {
-        setVuelos(data);
-      })
-      .catch((error:any) => console.error("Error al obtener vuelos:", error));
+    const fetchVuelos = async () => {
+      try {
+        const response = await service.getAllVuelosByOrigenAndDestino(1, 3);
+        setVuelos(response.data);
+      } catch (error) {
+        console.error("Error al obtener vuelos:", error);
+      }
+    };
+
+    fetchVuelos();
   }, []);
  
-
   return (
     <div >
       <NavBar />
