@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FlightForm from "./FlightForm";
 import CheckInForm from "./CheckInForm";
-import StatusForm from "./StatusForm";
+import StatusForm from "./StatusForm/StatusForm";
 import ReservationForm from "./ReservationForm";
 
 const FlightSearch = () => {

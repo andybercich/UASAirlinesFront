@@ -76,7 +76,7 @@ const HeroSection = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        <div className="absolute top-100 left-1/2 transform -translate-x-1/2 bg-opacity-90 w-300 h-max rounded-xl z-1 border-15 border-white/40">
+        <div className="absolute top-[23rem] left-1/2 transform -translate-x-1/2 bg-opacity-90 w-300 h-max rounded-xl z-1 border-15 border-white/40">
           <FlightSearch />
         </div>
       </div>
