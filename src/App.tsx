@@ -2,6 +2,8 @@
 import HeroSection from "./components/UI/HeroSection/HeroSection";
 import './index.css'
 import NavBar from "./components/UI/NavBar/NavBar";
+import SubHero from "./components/UI/SubHero/SubHero";
+
 
 
 function App() {
@@ -9,7 +11,7 @@ function App() {
     <div >
       <NavBar />
       <HeroSection/>
-      
+      <SubHero/>
     </div>
   );
 }
