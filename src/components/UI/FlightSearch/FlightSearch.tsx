@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FlightForm from "./FlightForm";
+import FlightForm from "./FlightForm/FlightForm";
 import CheckInForm from "./CheckInForm";
 import StatusForm from "./StatusForm/StatusForm";
 import ReservationForm from "./ReservationForm";

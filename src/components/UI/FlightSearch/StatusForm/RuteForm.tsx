@@ -1,13 +1,15 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-const FlightNumber = () => {
-  const [flightNumber, setFlightNumber] = useState("");
+const RuteForm = () => {
+  const [origin, setOrigin] = useState("");
+  const [destination, setDestination] = useState("");
   const [date, setDate] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log({
-      flightNumber,
+      origin,
+      destination,
       date,
     });
   };
@@ -17,14 +19,27 @@ const FlightNumber = () => {
         <div className="flex gap-15 relative">
           <div className="flex flex-col">
             <div className="pb-3  h-6 w-35 absolute text-gray-600 bottom-16">
-              Número de vuelo
+              Origen
             </div>
 
             <input
               type="text"
               placeholder="Codigo de reserva"
-              value={flightNumber}
-              onChange={(e) => setFlightNumber(e.target.value)}
+              value={origin}
+              onChange={(e) => setOrigin(e.target.value)}
+              className=" shadow-[0_0_10px_rgba(0,0,0,0.5)] w-50 rounded p-3 focus:outline-none mt-6"
+            />
+          </div>
+          <div className="flex flex-col">
+            <div className="pb-3  h-6 w-35 absolute text-gray-600 bottom-16">
+              Destino
+            </div>
+
+            <input
+              type="text"
+              placeholder="Codigo de reserva"
+              value={destination}
+              onChange={(e) => setDestination(e.target.value)}
               className=" shadow-[0_0_10px_rgba(0,0,0,0.5)] w-50 rounded p-3 focus:outline-none mt-6"
             />
           </div>
@@ -56,4 +71,4 @@ const FlightNumber = () => {
   );
 };
 
-export default FlightNumber;
+export default RuteForm;

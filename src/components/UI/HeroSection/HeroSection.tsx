@@ -22,7 +22,7 @@ const HeroSection = () => {
           className="shadow-lg cursor-pointer"
         >
           <SwiperSlide className="flex items-center justify-center h-full ">
-            <div className="bg-[url('https://wallpapershome.com/images/pages/pic_h/572.jpg')] bg-cover bg-center w-full h-150">
+            <div className="bg-[url('https://wallpapershome.com/images/pages/pic_h/572.jpg')] bg-cover bg-center w-full h-170">
               <div className="text-end p-20 ">
                 <div
                   className="text-white text-5xl  drop-shadow-2xl "
@@ -40,7 +40,7 @@ const HeroSection = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center h-full ">
-            <div className="bg-[url('https://wallpapercat.com/w/full/d/f/7/293062-3840x2160-desktop-4k-new-york-background-photo.jpg')] bg-cover bg-center w-full h-150">
+            <div className="bg-[url('https://wallpapercat.com/w/full/d/f/7/293062-3840x2160-desktop-4k-new-york-background-photo.jpg')] bg-cover bg-center w-full h-170">
               <div className="text-end p-20 ">
                 <div
                   className="text-white text-5xl  drop-shadow-2xl "
@@ -58,7 +58,7 @@ const HeroSection = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center justify-center h-full">
-            <div className="bg-[url('https://wallpapers.com/images/hd/buenos-aires-aerial-puerto-madero-iawmwi6htqrot4u7.jpg')] bg-cover bg-center w-full h-150 ">
+            <div className="bg-[url('https://wallpapers.com/images/hd/buenos-aires-aerial-puerto-madero-iawmwi6htqrot4u7.jpg')] bg-cover bg-center w-full h-170 ">
               <div className="text-end p-20 ">
                 <div
                   className="text-white text-5xl  drop-shadow-2xl "
@@ -76,7 +76,7 @@ const HeroSection = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        <div className="absolute top-[23rem] left-1/2 transform -translate-x-1/2 bg-opacity-90 w-300 h-max rounded-xl z-1 border-15 border-white/40">
+        <div className="absolute top-[25rem] left-1/2 transform -translate-x-1/2 bg-opacity-90 w-300 h-max rounded-xl z-1 border-15 border-white/40">
           <FlightSearch />
         </div>
       </div>

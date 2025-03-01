@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Rute from "./Rute";
-import FlightNumber from "./FlightNumber";
+import RuteForm from "./RuteForm";
+import FlightNumberForm from "./FlightNumberForm";
+
 
 const StatusForm = () => {
   const [activeTab, setActiveTab] = useState("flightnumber");
@@ -28,8 +29,8 @@ const StatusForm = () => {
         </div>
       </div>
       <div>
-        {activeTab === "flightnumber" && <p><FlightNumber /></p>}
-        {activeTab === "rute" && <p><Rute /></p>}
+        {activeTab === "flightnumber" && <p><FlightNumberForm /></p>}
+        {activeTab === "rute" && <p><RuteForm /></p>}
       </div>
     </>
   );
